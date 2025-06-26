@@ -1,0 +1,46 @@
+npm i express
+npm i cors
+npm i express-async-errors
+
+docker run --name postgres3 -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
+npm run typeorm migration:run
+
+npm run typeorm migration:create -- -n CreateProducts
+npm run typeorm migration:create -- -n CreateUsers
+
+npm i bcryptjs
+npm i -D @types/bcryptjs
+
+npm i jsonwebtoken
+npm i -D @types/jsonwebtoken
+
+npm i multer
+npm i -D @types/multer
+
+npm run typeorm migrations:create -- -n CreateUserTokens
+npm run typeorm migration:run
+
+npm i date-fns
+
+npm i nodemailer
+npm i -D @types/nodemailer
+
+npm i handlebars
+
+npm run typeorm migrations:create -- -n CreateCustomers
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n CreateOrders
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddCustomerIdToOrders
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n CreateOrdersProducts
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddOrderIdToOrdersProduct
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddProductIdToOrdersProduct
+npm run typeorm migration:run
