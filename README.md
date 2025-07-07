@@ -1,8 +1,8 @@
 <div align="center">
 
-<h3 align="center">Site de Sistema de Controle de Pizzaria </h3>
+<h3 align="center">Site de Sistema de Controle de Loja </h3>
 
-<p align="center">Trabalho final da disciplina de Desenvolvimento de Sistema Web</p>
+<p align="center">Trabalho feito nas aulas da disciplina de Desenvolvimento de Sistema Web</p>
 
 <br>
 
